@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Projetos - Turma 202</title>
+    <style>
+        /* =========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #101624;
+            /* Slate 900 (fundo escuro) */
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /* =========================================================
+           CABEÇALHO
+           ========================================================= */
+        .cabecalho {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #bd6500d5, #ff7b00c0);
+            border-bottom: 1px solid #334155;
+        }
+
+        .cabecalho h1 {
+            color: #bb0000da;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .cabecalho p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        /* =========================================================
+           ÁREA PRINCIPAL (GALERIA COM FLEXBOX)
+           ========================================================= */
+        .galeria {
+            flex: 1;
+            /* Faz a galeria crescer e empurrar o rodapé */
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que os cartões quebrem de linha se a tela for pequena */
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        /* =========================================================
+           OS CARTÕES DE PROJETO (CARDS)
+           ========================================================= */
+        .cartao {
+            background-color: #1e293b;
+            width: 320px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            border: 2px dashed #ff7300;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito ao passar o mouse por cima do cartão */
+        .cartao:hover {
+            transform: translateY(-8px);
+            border-color: #c70707;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .icone {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .cartao h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        /* =========================================================
+           BOTÕES DE LINK
+           ========================================================= */
+        .btn-acessar {
+            display: inline-block;
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn-acessar:hover {
+            background-color: #be0707;
+        }
+
+        /* =========================================================
+           RODAPÉ
+           ========================================================= */
+        .rodape {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f172a;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>🪦Trabalho sobre o Dia dos Mortos🪦</h1>
+        <p>Portfólio de Projetos Interativos - Turma 202</p>
+    </header>
+
+    <main class="galeria">
+
+        <!-- Projeto 1 -->
+        <article class="cartao">
+            <div class="icone">📖</div>
+            <h2>História e Referências</h2>
+            <a href="./site-8/index.html" class="btn-acessar">Abrir Projeto</a>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="cartao">
+            <div class="icone">👷👷‍♀️</div>
+            <h2>Funções</h2>
+            <!-- Lembre-se de verificar se o nome do arquivo bate com o href abaixo -->
+            <a href="./site-9/index.html" class="btn-acessar">Abrir Projeto</a>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="cartao">
+            <div class="icone">📋</div>
+            <h2>Materiais</h2>
+            <a href="./site-10/index.html" class="btn-acessar">Abrir Projeto</a>
+        </article>
+
+
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 EEB Elfrida Cristino da Silva - Desenvolvido pela Turma 202</p>
+    </footer>
+
+    <link rel="melted_monster" href="C:\Users\4551521336\Documents\Melted Monster.ttf">
+</body>
+
+</html>
