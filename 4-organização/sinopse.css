@@ -1,0 +1,53 @@
+@import url(https://dmletterstudio.com/product/melted-monster-halloween-pack-layered-font/);
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden;
+}
+
+
+main {
+    background-image: url('diadosmortos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    flex-grow: 1;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.sinopse {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+h1 {
+    text-align: left;
+
+    margin-left: 0;
+    padding: 0;
+
+    font-size: 350%;
+}
+
+h3 {
+    text-align: left;
+
+    margin-left: 0;
+    padding: 0;
+
+    font-size: 300%;
+}

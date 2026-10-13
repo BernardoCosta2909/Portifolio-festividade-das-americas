@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Projetos - Turma 202</title>
+    <style>
+       /* =========================================================
+           CONFIGURAÇÕES GERAIS
+           ========================================================= */
+
+        @import url(https://dmletterstudio.com/product/melted-monster-halloween-pack-layered-font/);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('diadosmortos.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            font-family: 'Melted Monster';
+            /* Slate 900 (fundo escuro) */
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /* =========================================================
+           CABEÇALHO
+           ========================================================= */
+        .cabecalho {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px  #334155;
+        }
+
+        .cabecalho h1 {
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .cabecalho p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        /* =========================================================
+           ÁREA PRINCIPAL (GALERIA COM FLEXBOX)
+           ========================================================= */
+        .galeria {
+            flex: 1;
+            /* Faz a galeria crescer e empurrar o rodapé */
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que os cartões quebrem de linha se a tela for pequena */
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        /* =========================================================
+           OS CARTÕES DE PROJETO (CARDS)
+           ========================================================= */
+        .cartao {
+            background-color: #1e293b;
+            width: 320px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            border: 2px dashed #ff7300;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito ao passar o mouse por cima do cartão */
+        .cartao:hover {
+            transform: translateY(-8px);
+            border-color: #c70707;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .icone {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .cartao h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        /* =========================================================
+           BOTÕES DE LINK
+           ========================================================= */
+        .btn-acessar {
+            display: inline-block;
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn-acessar:hover {
+            background-color: #be0707;
+        }
+
+        /* =========================================================
+           RODAPÉ
+           ========================================================= */
+        .rodape {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px  #334155;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>🏹 Materiais Utilizados 🏹</h1>
+        <p>Portfólio de Projetos Interativos - Turma 202</p>
+    </header>
+
+    <main class="galeria">
+
+        <!-- Quadrante 1 -->
+        <article class="cartao">
+            <div class="icone">🩹</div>
+            <h2>Fita</h2>
+            <h3>(Durex / Dupla Face)</h3>
+            <p>Será utilizada para ajudar na fixação dos elementos decorativos.</p>
+        </article>
+
+        <!-- Quadrante 2 -->
+        <article class="cartao">
+            <div class="icone"> 🎉🎊</div>
+            <h2>Papel Crepom</h2>
+            <!-- Lembre-se de verificar se o nome do arquivo bate com o href abaixo -->
+            <h4>(Laranja, Rosa, Roxo e Amarelo)</h4>
+            <p>Será utilizado para ajudar na confecção dos figurinos e para a decoração do ambiente como por exemplo, o
+                altar.</p>
+          
+        </article>
+
+        <!-- Quadrante 3 -->
+        <article class="cartao">
+            <div class="icone">🖼️</div>
+            <h2>4 Quadros</h2>
+            <p>Serão utilizados na confecção do altar.</p>
+          
+        </article>
+
+        <!-- Quadrante 4 -->
+        <article class="cartao">
+            <div class="icone">🕯️</div>
+            <h2>Velas Falsas</h2>
+            <p>Serão utilizadas na confecção do altar.</p>
+            
+        </article>
+
+        <!-- Quadrante 5 -->
+        <article class="cartao">
+            <div class="icone">📦</div>
+            <h2>Papelão</h2>
+            <p>Será utilizado na confecção dos figurinos como por exemplo, os chapéus.</p>
+        </article>
+
+        <!-- Quadrante 6 -->
+        <article class="cartao">
+            <div class="icone">🎭</div>
+            <h2>Máscaras</h2>
+            <p>Serão utilizadas pelos alunos encarregados dessa festividade que não irão utilizar maquiagem ou tinta.
+            </p>
+        </article>
+        <!-- Quadrante 7 -->
+        <article class="cartao">
+            <div class="icone">🎨</div>
+            <h2>Tinta Facial</h2>
+            <p>Será utilizada pelos alunos encarregados dessa festividade para a preparação da sua maquiagem.</p>
+            
+        </article>
+
+        <!-- Quadrante 8 -->
+        <article class="cartao">
+            <div class="icone">🧴🔥</div>
+            <h2>Cola Quente</h2>
+            <p>Será utilizada para a confecção dos figurinos e para a decoração do ambiente.</p>
+            
+        </article>
+
+        <!-- Quadrante 9 -->
+        <article class="cartao">
+            <div class="icone">🌼</div>
+            <h2>Flor Falsa</h2>
+            <p>Será utilizada como decoração do ambiente e como parte dos acessórios utilizados pelos alunos
+                encarregados dessa festividade.</p>
+            
+        </article>
+
+        <!-- Quadrante 10 -->
+        <article class="cartao">
+            <div class="icone">🟨</div>
+            <h2>E.V.A </h2>
+            <h3>(Dourado)</h3>
+            <p>Será utilizado para a confecção dos acessórios que compõem o figurino da personagem "La Noche".</p>
+            
+        </article>
+
+        <!-- Quadrante 11 -->
+        <article class="cartao">
+            <div class="icone">🎀</div>
+            <h2>Fita de Cetim</h2>
+            <p>Será utilizada como decoração do ambiente.</p>
+            
+        </article>
+
+        <!-- Quadrante 12 -->
+        <article class="cartao">
+            <div class="icone">🧵</div>
+            <h2>Fio de Nylon</h2>
+            <p>Será utilizado como decoração do ambiente, colocando-o no teto da sala utilizada.</p>
+            
+        </article>
+
+        <!-- Quadrante 13 -->
+        <article class="cartao">
+            <div class="icone">🧶👗</div>
+            <h2>Tecido</h2>
+            <p>Será utilizado na confecção dos figurinos e para a decoração do altar.</p>
+            
+        </article>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 EEB Elfrida Cristino da Silva - Desenvolvido pela Turma 202</p>
+    </footer>
+
+    <link rel="melted_monster" href="C:\Users\4551521336\Documents\Melted Monster.ttf">
+</body>
+
+</html>

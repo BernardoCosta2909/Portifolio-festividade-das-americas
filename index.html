@@ -9,6 +9,9 @@
         /* =========================================================
            CONFIGURAÇÕES GERAIS
            ========================================================= */
+
+        @import url(https://dmletterstudio.com/product/melted-monster-halloween-pack-layered-font/);
+
         * {
             margin: 0;
             padding: 0;
@@ -16,8 +19,13 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #101624;
+            background-image: url('diadosmortos.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            font-family: 'Melted Monster';
             /* Slate 900 (fundo escuro) */
             color: #f8fafc;
             min-height: 100vh;
@@ -32,12 +40,11 @@
         .cabecalho {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #bd6500d5, #ff7b00c0);
-            border-bottom: 1px solid #334155;
+            border-bottom: 1px #334155;
         }
 
         .cabecalho h1 {
-            color: #bb0000da;
+            color: white;
             font-size: 2.2rem;
             margin-bottom: 10px;
         }
@@ -69,6 +76,7 @@
             background-color: #1e293b;
             width: 320px;
             padding: 30px 20px;
+            flex-grow: 1;
             border-radius: 12px;
             border: 2px dashed #ff7300;
             text-align: center;
@@ -117,9 +125,8 @@
         .rodape {
             text-align: center;
             padding: 20px;
-            background-color: #0f172a;
-            border-top: 1px solid #334155;
-            color: #64748b;
+            border-top: 1px  #334155;
+            color: white;
             font-size: 0.9rem;
         }
     </style>
@@ -128,7 +135,7 @@
 <body>
 
     <header class="cabecalho">
-        <h1>🪦Trabalho sobre o Dia dos Mortos🪦</h1>
+        <h1>💀🪦Trabalho sobre o Dia dos Mortos🪦💀</h1>
         <p>Portfólio de Projetos Interativos - Turma 202</p>
     </header>
 
@@ -138,7 +145,7 @@
         <article class="cartao">
             <div class="icone">📖</div>
             <h2>História e Referências</h2>
-            <a href="./site-8/index.html" class="btn-acessar">Abrir Projeto</a>
+            <a href="1-história/0-historia.html" class="btn-acessar">Abrir Projeto</a>
         </article>
 
         <!-- Projeto 2 -->
@@ -146,15 +153,23 @@
             <div class="icone">👷👷‍♀️</div>
             <h2>Funções</h2>
             <!-- Lembre-se de verificar se o nome do arquivo bate com o href abaixo -->
-            <a href="./site-9/index.html" class="btn-acessar">Abrir Projeto</a>
+            <a href="2-funções/0-funcoes.html" class="btn-acessar">Abrir Projeto</a>
         </article>
 
         <!-- Projeto 3 -->
         <article class="cartao">
             <div class="icone">📋</div>
             <h2>Materiais</h2>
-            <a href="./site-10/index.html" class="btn-acessar">Abrir Projeto</a>
+            <a href="3-materiais/0-materiais.html" class="btn-acessar">Abrir Projeto</a>
         </article>
+
+        <!-- Projeto 4 -->
+        <article class="cartao">
+            <div class="icone">📋</div>
+            <h2>Organização</h2>
+            <a href="4-organização/0-organizacao.html" class="btn-acessar">Abrir Projeto</a>
+        </article>
+
 
 
 

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('imagens/diadosmortos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    background-color: black;
+    color: white;
+}
+
+header {
+    
+    height: 15%;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90%;
+    font-size: xx-large;
+}
+
+main {
+
+    flex-grow: 1;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Card {
+   
+    background-color: rgba(0, 0, 0, 0.485);
+    border: solid rgba(0, 0, 0, 0.485);
+    width: 900px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-grow: 1;
+}
+
+img {
+    display: flex;
+    padding: 0;
+
+    width: 40%;
+    height: 100%;
+
+    object-fit: fill;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    padding: 5px;
+
+    min-width: 0;
+}
+
+h1 {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin-left: 0;
+    padding: 0;
+
+    min-width: 0;
+
+    font-size: 30px;
+}
+
+h3 {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin-left: 0;
+    padding: 0;
+
+    min-width: 0;
+
+    font-size: 13px;
+
+}
+
+a {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin-left: 0;
+    padding: 0;
+
+    min-width: 0;
+
+    font-size: 25px;
+    color: rgb(255, 132, 0);
+    list-style-type: none;
+}
+
+footer {
+   
+    height: 5%;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
